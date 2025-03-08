@@ -8,4 +8,9 @@ highlighted_poems_list = highlighted_poems.split(',')
 highlighted_poems_stripped = []
 for poem in highlighted_poems_list:
   highlighted_poems_stripped.append(poem.strip())
-print(highlighted_poems_stripped)
+
+# split poems into individual sublists
+highlighted_poems_details = []
+for poem in highlighted_poems_stripped:
+  highlighted_poems_details.append(poem.split(':'))
+print(highlighted_poems_details)
