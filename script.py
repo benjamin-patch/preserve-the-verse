@@ -22,4 +22,7 @@ for poem in highlighted_poems_details:
   titles.append(poem[0])
   poets.append(poem[1])
   dates.append(poem[2])
-print(titles, poets, dates)
+
+# format and print data from each list
+for i in range(len(titles)):
+  print('The poem "{title}" was published by {poet} in {date}.'.format(title=titles[i], poet=poets[i], date=dates[i]))
