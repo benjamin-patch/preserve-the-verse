@@ -13,4 +13,13 @@ for poem in highlighted_poems_list:
 highlighted_poems_details = []
 for poem in highlighted_poems_stripped:
   highlighted_poems_details.append(poem.split(':'))
-print(highlighted_poems_details)
+
+# separate attributes into specific lists
+titles = []
+poets = []
+dates = []
+for poem in highlighted_poems_details:
+  titles.append(poem[0])
+  poets.append(poem[1])
+  dates.append(poem[2])
+print(titles, poets, dates)
