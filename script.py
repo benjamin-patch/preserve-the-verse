@@ -3,4 +3,9 @@ highlighted_poems = "Afterimages:Audre Lorde:1997,  The Shadow:William Carlos Wi
 
 # split the string into a list
 highlighted_poems_list = highlighted_poems.split(',')
-print(highlighted_poems_list)
+
+# clear whitespace
+highlighted_poems_stripped = []
+for poem in highlighted_poems_list:
+  highlighted_poems_stripped.append(poem.strip())
+print(highlighted_poems_stripped)
